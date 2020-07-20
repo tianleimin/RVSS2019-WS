@@ -1,0 +1,21 @@
+# First, switch robot on
+
+# Wait for boot... (1 min)
+
+# Connect WiFi to the penguinpi:xx:xx:xx (look for it in the WiFi window)
+# SSD _should_ be from the final 6 digits seen on the robot, but we found
+# a different SSD in WiFi list instead!
+#
+# Password: edb439123
+
+git clone https://github.com/fdayoub/RVSS2019-WS.git
+
+cd RVSS2019-WS/
+
+scp -r ./on_robot pi@192.168.50.1:~/RVSS2019
+Password: PenguinPi
+
+ssh -X pi@192.168.50.1
+Password: PenguinPi
+
+
